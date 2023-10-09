@@ -1,7 +1,10 @@
-import { greetUser } from '$utils/greet';
+import './index.css';
+
+import { heroJs } from '$utils/form';
+import { openScreen } from '$utils/fullscreen';
 
 window.Webflow ||= [];
 window.Webflow.push(() => {
-  const name = 'John Doe';
-  greetUser(name);
+  heroJs();
+  openScreen();
 });
